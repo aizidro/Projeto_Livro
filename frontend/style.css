@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-image: url(./img/book.png);
+   
+}   
+
+header {
+    height: 10vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 5px;
+    padding: 5px;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.livros {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+label {
+    font-weight: bold;
+    
+}
+
+th {
+    color: #fff;
+}
+
+tr {
+    color:rgb(255, 240, 28);
+}
+
+form {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+input {
+    max-width: 160px;
+    margin: 5px;
+    border: 1px solid #ff7e05;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    color: #a35002;
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+main {
+    
+    height: 50vh;
+    max-width: 60vw;
+    border: 1px solid #ff7e05;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 5px;
+}
+
+main::-webkit-scrollbar {
+    width: 10px;
+}
+
+main::-webkit-scrollbar-track {
+    background: rgb(255, 225, 192);
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: #ff9a3b;
+    border-radius: 10px;
+    border: 1px solid #ff7e05;
+}
+
+main table {
+    width: 50vw;
+}
+
+main table tr:nth-child(even) > td {
+    background: rgb(244, 148, 47);
+}
+
+main table tr:nth-child(even) > td:last-child {
+    background: none;
+}
+
+/* main table tr:nth-child(even) button {
+    background: none;
+    box-shadow: 0px 0px 0px;
+} */
+
+main table tr td {
+    text-align: center;
+}
+
+button {
+    border: none;
+    /* background-color: #ff7e05; */
+    background-color: red;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    padding: 5px;
+    color: #fff;
+    box-shadow: 1px 1px 3px #ccc;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    border: none;
+    background-color: #ff7e05;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    padding: 5px;
+    color: #fff;
+    box-shadow: 1px 1px 3px #ccc;
+    cursor: pointer;
+}

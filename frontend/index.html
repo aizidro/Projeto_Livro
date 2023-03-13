@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Livros</title>
+</head>
+
+<body onload="listar()">
+    <header>
+        <h1>Controle de Livros Emprestados</h1>
+        <div class="livros">
+            <label for="id"></label>
+            <label for="titulo"></label>
+            <label for="valor"></label>
+            <label for="autor"></label>
+            <label for="dataEmprest"></label>
+            <label for="dataPrevDev"></label>
+            <label for="dataDevolucao"></label>
+        </div>
+        <form id="cadastro">
+            
+            <input type="text" name="titulo" id="titulo" required />
+            <input type="text" name="autor" id="autor" />
+            <input type="number" step="any" name="valor" id="valor" required />
+            <input type="date" name="dataEmprest" id="dataEmprest" required />
+            <input type="date" name="dataPrevDev" id="dataPrevDev" required />
+            <input type="date" name="dataDevolucao" id="dataDevolucao" required />
+            <input type="submit" value="Cadastrar" />
+        </form>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>titulo</th>
+                    <th>Autor</th>
+                    <th>Valor</th>
+                    <th>dataEmprest</th>
+                    <th>dataDevPrevDev</th>
+                    <th>dataDevolucao</th>
+                </tr>
+            </thead>
+            <tbody id="corpo"></tbody>
+        </table>
+    </main>
+
+</body>
+<script src="script.js"></script>
+
+</html>
